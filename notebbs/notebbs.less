@@ -1,3 +1,8 @@
+@font-face{
+    font-family: "ChillRoundF";
+    src: url("https://fastly.jsdelivr.net/gh/Warren2060/ChillRound@1.5.0/ChillRound/ChillRoundF.ttf");
+}
+
 header.WelcomeHero{
     background-color: #2a6b82;
     color: white;
@@ -98,7 +103,7 @@ Button.Button.Button--block.DiscussionList-update:not(#wiefeiwofweiogwerer, #owe
 }
 
 * {
-        font-family: chillroundf, sans-serif;
+    font-family: chillroundf, 'Microsoft YaHei', sans-serif;
 }
 
 /** HubUi-X Start **/
@@ -307,4 +312,29 @@ div.Stickiest-tagStickyItem{
 .AfruxWidgets-Widget > .AfruxWidgets-Widget-content{
     box-shadow: unset;
     border: 1px #f3e5e5 solid;
+}
+
+
+div.IndexPage-results.sideNavOffset{
+    border: unset;
+}
+
+pre>code{
+    font-family: source-code-pro,Consolas,monospace;
+}
+
+article.EventPost{
+    background-color: #ddb5c3;
+}
+
+article.Post--hidden header{
+    text-decoration: line-through;
+}
+
+article div.EventPost-info:before{
+    content: "\f071";
+    font-family: 'Font Awesome 5 Pro', 'Font Awesome 5 Free';
+    margin-right: 5px;
+    color: red;
+    font-weight: bold;
 }
