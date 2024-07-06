@@ -262,13 +262,19 @@ button.Button-emoji-parent.active{
     background-color: #bee4e969;
 }
 
-@stickiest-color: #d8daf6;
+/** Sticky Style Start **/
+
+@stickiest-color: #ebecf9;
 @sticky-color: #ffdddd;
+@tag-sticky-color: #e3f5e3;
 
 div.Stickiest-stickiestItem{
     background-color: @stickiest-color;
     &:hover{
         background-color: @stickiest-color;
+    }
+    & .DiscussionListItem-title when (@config-dark-mode = true) {
+        color: black !important;
     }
 }
 
@@ -277,7 +283,26 @@ div.Stickiest-stickyItem{
     &:hover{
         background-color: @sticky-color;
     }
+    & .DiscussionListItem-title when (@config-dark-mode = true) {
+        color: black !important;
+    }
 }
+
+div.Stickiest-tagStickyItem{
+    background-color: @tag-sticky-color;
+    &:hover{
+        background-color: @tag-sticky-color;
+    }
+    & .Badge--sticky{
+        background-color: green;
+    }
+    & .DiscussionListItem-title when (@config-dark-mode = true) {
+        color: black !important;
+    }
+}
+
+
+/** Sticky Style End **/
 
 .AfruxWidgets-Widget > .AfruxWidgets-Widget-content{
     box-shadow: unset;
