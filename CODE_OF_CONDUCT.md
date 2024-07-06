@@ -8,3 +8,5 @@
 ## 禁止的
 * 辱骂、侮辱他人
 * 提交无关 issue。
+* 恶意提交bug issue/pull request。
+* 发布垃圾广告。
