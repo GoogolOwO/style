@@ -1,0 +1,280 @@
+header.WelcomeHero{
+    background-color: #2a6b82;
+    color: white;
+    /*font-family: 宋体;*/
+    .Hero-subtitle{
+        text-align: left;
+    }
+}
+.Afrux-NewsWidget > .AfruxWidgets-Widget-content{
+    transition: background-color 300ms ease;
+}
+.Afrux-NewsWidget > .AfruxWidgets-Widget-content:hover{
+    background-color: green;
+    color: white;
+    a{
+        color: yellow;
+    }
+}
+.Afrux-TopPostersWidget-users-item-name{
+    font-size: normal;
+}
+
+div.DiffList-container .DiffList-content>ul>li.Diff:hover{
+    background: #ccc;
+}
+
+/*header.WelcomeHero:hover{
+    transform: skewx(2deg) translatey(5px);
+    transform-origin: bottom right;
+    perspective: 500px;
+}
+*/
+
+button.IndexPage-newDiscussion.Button--primary{
+    background: gold;
+    color: black;
+    transition: background,box-shadow 200ms ease-in-out;
+    &:hover{
+        background: green;
+        color: white;
+        box-shadow: 3px 3px 5px gold;
+    }
+}
+
+li.item-hide button.hasIcon{
+    &:hover{
+        background-color: red;
+        color: white;
+    }
+}
+li.item-sticky button.hasIcon{
+    &:hover{
+        background-color: #6b27a9;
+        color: white;
+    }
+}
+
+li.item-clarkwinkelmann-author-change button.hasIcon{
+    &:hover{
+        background-color: #a2dcd2;
+    }
+}
+
+li.item-shadow-hide button.hasIcon{
+    &:hover{
+        color: #b2d0bf;
+        font-weight: bold;
+    }
+}
+
+li.item-like button.Button.Button--link{
+    font-size: large;
+    &:hover{
+        color: green;
+        font-weight: bold;
+    }
+}
+
+li.item-logOut button.hasIcon{
+    font-size: small;
+    &:hover{
+        background-color: white;
+        font-weight: 100;
+        color: red;
+    }
+    &:after{
+        content: "（别离开啊~）";
+        color: black;
+    }
+}
+
+button.SubscriptionMenu-button.SubscriptionMenu-button--null.hasIcon:not(#yu22c-is-what-man, #yu22c-view-only){
+    background-color: yellow;
+}
+
+Button.Button.Button--block.DiscussionList-update:not(#wiefeiwofweiogwerer, #owehfeowfhwo, noexistingelem){
+    background: yellow;
+}
+
+* {
+        font-family: chillroundf, sans-serif;
+}
+
+/** HubUi-X Start **/
+
+@border-radius: 5px;
+body, #app .App-content {
+    background-color: var(--control-bg-light);
+}
+#drawer, #app-navigation, #header {
+    & when (@config-colored-header = false){
+        background-color: var(--control-bg-light);
+    }
+}
+.AfruxWidgets-Widget-content {
+    border-radius: @border-radius;
+}
+/**
+.item-like .Button--link .Button-label,.item-dislike .Button--link .Button-label,.item-reply .Button--link .Button-label {
+	display:none;
+}
+**/
+.item-like .Button:before {
+        font-size: large; /** Customize **/
+	font-family:'Font Awesome 5 Free', 'Font Awesome 6 Free', 'Font Awesome 6 Pro';
+	font-weight:600;
+	font-size:14px;
+	content:'\f164  ';
+	vertical-align:-1px;
+}
+.item-dislike .Button:before {
+        font-size: large; /** Customize **/
+	font-family:'Font Awesome 5 Free', 'Font Awesome 6 Free', 'Font Awesome 6 Pro';
+	font-weight:600;
+	font-size:14px;
+	content:'\f165  ';
+	vertical-align:-3px;
+}
+.item-reply .Button--link:before {
+        font-size: large; /** Customize **/
+	font-family:'Font Awesome 5 Free', 'Font Awesome 6 Free', 'Font Awesome 6 Pro';
+	font-weight:600;
+	font-size:15px;
+	content:'\f3e5  ';
+	margin-right:4px;
+	vertical-align:-2px;
+}
+.PostStream {
+    border-radius: @border-radius;
+    margin: 4px;
+    padding: 4px 22px 4px 22px;
+    & when (@config-dark-mode = false) {
+        background-color: rgba(255,255,255,0.8);
+    }
+    & when (@config-dark-mode = true) {
+        background-color: rgba(14,14,14,0.8);
+    }
+}
+.PostsUserPage {
+    border-radius: @border-radius;
+    margin: 4px;
+    padding: 12px 22px 12px 22px;
+    & when (@config-dark-mode = false) {
+        background-color: rgba(255,255,255,0.8);
+    }
+    & when (@config-dark-mode = true) {
+        background-color: rgba(14,14,14,0.8);
+    }
+}
+div.DiscussionListItem {
+    margin: 10px 0px 10px 0px;
+    border-radius: @border-radius !important;
+    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.059);
+    transition: box-shadow 100ms ease-in;
+    & when (@config-dark-mode = false) {
+        background-color: rgba(255,255,255,0.8);
+    }
+    & when (@config-dark-mode = true) {
+        background-color: rgba(14,14,14,0.8);
+    }
+    &:hover{
+        box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.059);
+    }
+}
+@media @phone {
+    .DiscussionListItem {
+        margin: 8px;
+    }
+}
+@media @tablet-up {
+    li.item-nav {
+        padding: 2px 12px 2px 12px;
+        border-radius: @border-radius;
+        & when (@config-dark-mode = false) {
+            background-color: rgba(255,255,255,0.8);
+        }
+        & when (@config-dark-mode = true) {
+            background-color: rgba(14,14,14,0.8);
+        }
+    }
+}
+.Badge {
+    opacity: 0.9;
+    color: #fff;
+}
+.Hero-close {
+    display: none;
+}
+header.Hero.DiscussionHero, header.Hero.WelcomeHero {
+    border-radius: @border-radius;
+}
+.darkenBackground,.Hero {
+    border-radius: @border-radius;
+}
+.Hero {
+    margin: 12px;
+}
+.Dropdown-menu {
+    border-radius: @border-radius;
+    padding: 1px;
+    &>li {
+        margin: 4px;
+        &>a, &>button {
+            border-radius: @border-radius;
+        }
+    }
+}
+.Composer {
+    border-radius: 12px 12px 0 0;
+}
+.ComposerBody-loading {
+    border-radius: 12px;
+}
+@media (min-width:992px){
+    .TagTiles>li{
+        width: 30% !important;
+        border-radius: @border-radius !important;
+        margin: 15px;
+    }
+}
+@media (max-width:991px) and (min-width:768px){
+    .TagTiles>li{
+        width: 45% !important;
+        border-radius: @border-radius !important;
+        margin: 15px;
+    }
+}
+
+@media (max-width: 767px){
+    .TagTiles>li{
+        border-radius: @border-radius !important;
+        margin: 15px;
+    }
+}
+.Button:active, .Button.active, .open>.Button.Dropdown-toggle {
+	box-shadow: unset;
+}
+
+/** HubUi-X End **/
+
+button.Button-emoji-parent.active{
+    background-color: #bee4e969;
+}
+
+@stickiest-color: #d8daf6;
+@sticky-color: #ffdddd;
+
+div.Stickiest-stickiestItem{
+    background-color: @stickiest-color;
+    &:hover{
+        background-color: @stickiest-color;
+    }
+}
+
+div.Stickiest-stickyItem{
+    background-color: @sticky-color;
+    &:hover{
+        background-color: @sticky-color;
+    }
+}
