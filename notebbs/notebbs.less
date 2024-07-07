@@ -1,6 +1,6 @@
 @font-face{
     font-family: "ChillRoundF";
-    src: url("https://fastly.jsdelivr.net/gh/Warren2060/ChillRound@1.5.0/ChillRound/ChillRoundF.ttf");
+    src: url("https://cdn-js.moeworld.top/gh/Warren2060/ChillRound@1.5.0/ChillRound/ChillRoundF.ttf");
 }
 
 header.WelcomeHero{
@@ -281,6 +281,9 @@ div.Stickiest-stickiestItem{
     & .DiscussionListItem-title when (@config-dark-mode = true) {
         color: black !important;
     }
+    & ul.DiscussionListItem-info when (@config-dark-mode = true) {
+        color: var(--muted-more-color) !important;
+    }
 }
 
 div.Stickiest-stickyItem{
@@ -290,6 +293,9 @@ div.Stickiest-stickyItem{
     }
     & .DiscussionListItem-title when (@config-dark-mode = true) {
         color: black !important;
+    }
+    & ul.DiscussionListItem-info when (@config-dark-mode = true) {
+        color: var(--muted-more-color) !important;
     }
 }
 
@@ -303,6 +309,9 @@ div.Stickiest-tagStickyItem{
     }
     & .DiscussionListItem-title when (@config-dark-mode = true) {
         color: black !important;
+    }
+    & ul.DiscussionListItem-info when (@config-dark-mode = true) {
+        color: var(--muted-more-color) !important;
     }
 }
 
@@ -324,7 +333,7 @@ pre>code{
 }
 
 article.EventPost{
-    background-color: #ddb5c3;
+    background-color: #f5e2e9;
 }
 
 article.Post--hidden header{
@@ -335,6 +344,6 @@ article div.EventPost-info:before{
     content: "\f071";
     font-family: 'Font Awesome 5 Pro', 'Font Awesome 5 Free';
     margin-right: 5px;
-    color: red;
+    color: yellow;
     font-weight: bold;
 }
